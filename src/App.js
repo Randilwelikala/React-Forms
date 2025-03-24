@@ -5,9 +5,9 @@ import { useState } from 'react';
 function App() {
   const [username,setUsername] = useState('adc');
 
-  const usernameHandler = (event) =>{
-    console.log(event.Target.value);
-    setUsername(event.target.value);
+  const usernameHandler = (e) =>{
+    console.log(e.Target.value);
+    setUsername(e.target.value);
   }
   return (
     <div className="App">
