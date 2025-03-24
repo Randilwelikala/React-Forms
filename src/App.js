@@ -5,9 +5,9 @@ import { useState } from 'react';
 function App() {
   const [username,setUsername] = useState('adc');
 
-  const usernameHandler = (e) =>{
-    console.log(e.target.value);
-    setUsername(e.target.value);
+  const usernameHandler = (event) =>{
+    console.log(event.target.value);
+    setUsername(event.target.value);
   }
   return (
     <div className="App">
@@ -18,6 +18,8 @@ function App() {
             <lable>UserName: </lable>
             <input type='text' value={username} onChange={usernameHandler} name='username'/>
           </div>
+          <lable>Password: </lable>
+          <input type='password' name='password'></input>
         </form>
       </header>
     </div>
