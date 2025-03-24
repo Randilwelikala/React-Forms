@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 function App() {
   const [username,setUsername] = useState('adc');
-  const [password,setPassword] = useState('asd')
+  const [password,setPassword] = useState('asd');
+  const [email,setEmail] = useState('pqr');
 
   const usernameHandler = (event) =>{
     console.log(event.target.value);
@@ -15,6 +16,11 @@ function App() {
     console.log(event.target.value);
     setPassword(event.target.value);
   }
+
+  const emailHandler=(event) =>{
+    console.log(event.target.value);
+    setEmail(event.target.value);
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -24,8 +30,16 @@ function App() {
             <lable>UserName: </lable>
             <input type='text' value={username} onChange={usernameHandler} name='username'/>
           </div>
+
+          <div>
           <lable>Password: </lable>
           <input type='password' name='password' value={password} onChange={passwordHandler}></input>
+          </div>
+
+          <div>
+            <lable>Email: </lable>
+            <input type='email' name='email' value={email} onChange={emailHandler}></input>
+          </div>
         </form>
       </header>
     </div>
