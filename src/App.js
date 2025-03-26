@@ -50,14 +50,16 @@ function App() {
           <div>
             <lable>Age: </lable>       
             <input type='number' value={age} onChange={ageHandler} name='age'></input>
-            </div>   
+          </div>   
 
-            <div>
-              <lable>
-                <input type='radio' name='gender' value='male'> </input>
-                <input type='radio' name='gender' value='female'></input>
-              </lable>
+          <div>
+              <lable>Gender</lable>
+              <input type='radio' name='gender' value='male'/>
+              <input type='radio' name='gender' value='female'></input>
+              
             </div>
+
+            
         </form>
       </header>
     </div>
