@@ -51,6 +51,13 @@ function App() {
             <lable>Age: </lable>       
             <input type='number' value={age} onChange={ageHandler} name='age'></input>
             </div>   
+
+            <div>
+              <lable>
+                <input type='radio' name='gender' value='male'> </input>
+                <input type='radio' name='gender' value='female'></input>
+              </lable>
+            </div>
         </form>
       </header>
     </div>
