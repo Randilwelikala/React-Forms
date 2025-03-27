@@ -63,8 +63,8 @@ function App() {
 
           <div>
               <label>Gender</label>
-              <label><input type='radio' name='gender' value='male'onChange={genderHandler}/>Male</label>
-              <label><input type='radio' name='gender' value='female'/>Female</label>
+              <label><input type='radio' name='gender' checked={false} value='male' onChange={genderHandler}/>Male</label>
+              <label><input type='radio' name='gender' checked={true} value='female' onChange={genderHandler}/>Female</label>
               
             </div>
 
