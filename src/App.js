@@ -7,7 +7,7 @@ function App() {
   const [password,setPassword] = useState('asd');
   const [email,setEmail] = useState('test@.com');
   const [age,setAge] = useState(20);
-  const [gender,setGender] = useState('female');
+  const [gender,setGender] = useState('');
 
 
   const usernameHandler = (event) =>{
@@ -66,7 +66,19 @@ function App() {
               <label><input type='radio' name='gender' checked={gender === 'male'} value='male' onChange={genderHandler}/>Male</label>
               <label><input type='radio' name='gender' checked={gender === 'female'} value='female' onChange={genderHandler}/>Female</label>
               
-            </div>
+          </div>
+
+          <div>
+            <label>Country: </label>
+            <select>
+              <option>Select your country</option>
+              <option>USA</option>
+              <option>Canada</option>
+              <option>UK</option>
+              <option>Australia</option>
+              <option>Sri Lanka</option>            
+            </select>
+          </div>
 
             
         </form>
