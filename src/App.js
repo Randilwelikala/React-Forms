@@ -33,29 +33,29 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <form>
           <div>
-            <lable>UserName: </lable>
+            <label>UserName: </label>
             <input type='text' value={username} onChange={usernameHandler} name='username'/>
           </div>
 
           <div>
-          <lable>Password: </lable>
+          <label>Password: </label>
           <input type='password' name='password' value={password} onChange={passwordHandler}></input>
           </div>
 
           <div>
-            <lable>Email: </lable>
+            <label>Email: </label>
             <input type='email' name='email' value={email} onChange={emailHandler}></input>
           </div>
 
           <div>
-            <lable>Age: </lable>       
+            <label>Age: </label>       
             <input type='number' value={age} onChange={ageHandler} name='age'></input>
           </div>   
 
           <div>
-              <lable>Gender</lable>
-              <input type='radio' name='gender' value='male'/>
-              <input type='radio' name='gender' value='female'></input>
+              <label>Gender</label>
+              <label><input type='radio' name='gender' value='male'/>Male</label>
+              <label><input type='radio' name='gender' value='female'/>Female</label>
               
             </div>
 
