@@ -8,6 +8,7 @@ function App() {
   const [email,setEmail] = useState('test@.com');
   const [age,setAge] = useState(20);
   const [gender,setGender] = useState('');
+  const [countr,setCountry] = useState('')
 
 
   const usernameHandler = (event) =>{
@@ -34,6 +35,8 @@ function App() {
     console.log(event.target.value);
     setGender(event.target.value);
   }
+
+  
 
 
   return (
@@ -70,13 +73,13 @@ function App() {
 
           <div>
             <label>Country: </label>
-            <select>
-              <option>Select your country</option>
-              <option>USA</option>
-              <option>Canada</option>
-              <option>UK</option>
-              <option>Australia</option>
-              <option>Sri Lanka</option>            
+            <select name='country' value ='country' onChange={countryHandler}>
+              <option value=''>Select your country</option>
+              <option value='usa'>USA</option>
+              <option value='canada'>Canada</option>
+              <option value='uk'>UK</option>
+              <option value='australia'>Australia</option>
+              <option value='srilanka'>Sri Lanka</option>            
             </select>
           </div>
 
