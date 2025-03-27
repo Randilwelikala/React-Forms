@@ -5,8 +5,10 @@ import { useState } from 'react';
 function App() {
   const [username,setUsername] = useState('adc');
   const [password,setPassword] = useState('asd');
-  const [email,setEmail] = useState('pqr');
-  const [age,setAge] = useState('12');
+  const [email,setEmail] = useState('test@.com');
+  const [age,setAge] = useState(20);
+  const [gender,setGender] = useState('');
+
 
   const usernameHandler = (event) =>{
     console.log(event.target.value);
@@ -27,6 +29,13 @@ function App() {
     console.log(event.target.value);
     setAge(event.target.value);
   }
+
+  const genderHandler =(event)=>{
+    console.log(event.target.value);
+    // setGender(event.target.value);
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -54,7 +63,7 @@ function App() {
 
           <div>
               <label>Gender</label>
-              <label><input type='radio' name='gender' value='male'/>Male</label>
+              <label><input type='radio' name='gender' value='male'onChange={genderHandler}/>Male</label>
               <label><input type='radio' name='gender' value='female'/>Female</label>
               
             </div>
