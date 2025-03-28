@@ -89,8 +89,12 @@ function App() {
           </div>
 
           <div>
-            <label></label>
-            <input type='checkbox'></input>
+            <label>Hobbies: </label>
+            <br/>
+            <input type='checkbox' name='hobbies' value='reading' ></input>
+            <input type='checkbox' name='hobbies' value='reading' ></input>
+            <input type='checkbox' name='hobbies' value='reading' ></input>
+            
 
 
           </div>
