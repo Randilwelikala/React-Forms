@@ -36,7 +36,12 @@ function App() {
     setGender(event.target.value);
   }
 
-  
+  const countryHandler =(event)=>{
+    console.log(event.target.value);
+    setGender(event.target.value);
+  }
+
+
 
 
   return (
@@ -81,6 +86,13 @@ function App() {
               <option value='australia'>Australia</option>
               <option value='srilanka'>Sri Lanka</option>            
             </select>
+          </div>
+
+          <div>
+            <label></label>
+            <input type='checkbox'></input>
+
+
           </div>
 
             
